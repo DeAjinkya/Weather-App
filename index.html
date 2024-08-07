@@ -4,82 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <script src="script/app.js" defer></script>
-    <script src="https://kit.fontawesome.com/354d6ae18e.js" crossorigin="anonymous"></script>
-    <!--<script src="https://cdn.tailwindcss.com"></script>-->
+    <script src="script/app.js"></script>
     <title>Wapp</title>
 </head>
 <body>
-    <div class="container">
-        <div class="winput">
-            <div class="inputs">
-                <input type="text" id="userlocation" placeholder="Search for places..." />
-
-                <select class="converter" id="converter">
-                    <option value="">°C</option>
-                    <option value="">°F</option>
-                </select>
-
-                <i class="fa-sharp-duotone fa-solid fa-magnifying-glass" onclick="FindUserLocation()"></i>
-            </div>
-            <div class="wicon"></div>
-            <h2 class="temp"></h2>
-            <div class="feelslike"></div>
-            <div class="description"></div>
-            <hr>
-            <div class="date"></div>
-            <div class="city"></div>
+    <h1>weather dashboard</h1>
+    <div>
+        <div class="inputs">
+            <h3>Enter a City name</h3>
+            <input type="text" placeholder="eg.,pune ,nagpur">
+            <button id="search-btn">Search</button>
+            <div class="separator"></div>
+            <button id="location-btn">Use current location</button>
         </div>
-        <div class="woutput">
-            <h2 class="heading">Today's highlights</h2>
-            <div class="highlights">
-                <div class="humidity">
-                    humidity
-                    <i class="fa-duotone fa-solid fa-water"></i>
-                    <p id="hvalue"></p>
+        <div>
+            <div id="current-weather">
+                <div id="details">
+                    <h2>London (2024-06-19)</h2>
+                    <h4>Temperature : 19.10C</h4>
+                    <h4>Wind : 4.31 M/S</h4>
+                    <h4>Humidity : 79%</h4>
                 </div>
-
-                <div class="wind-speed">
-                    Wind-speed
-                    <i class="fa-duotone fa-solid fa-wind"></i>
-                    <p id="wvalue"></p>
+                <div id="icon">
+                    <img src="assets/F3AA909B-384F-42A4-8054-44339177461A_4_5005_c.jpeg" alt="weather-icon">
+                    <h4>Moderate Rain</h4>
                 </div>
-
-                <div class="sun">
-                    <span>
-                        <i class="fa-solid fa-sun"></i>
-                        <p><span id="srvalue">Sunrise</span></p>
-                    </span>
-                    <span>
-                        <i class="fa-duotone fa-solid fa-sun"></i>
-                        <p><span id="ssvalue">Sunset</span></p>
-                    </span>
-                </div>
-
-                <div class="clouds">
-                    Clouds
-                    <i class="fa-solid fa-cloud"></i>
-                    <p id="cvalue"></p>
-                </div>
-
-                <div class="uv-index">
-                    UV index
-                    <i class="fa-solid fa-bacon"></i>
-                    <p id="uvvalue"></p>
-                </div>
-
-                <div class="pressure">
-                    Pressure
-                    <i class="fa-duotone fa-solid fa-volcano"></i>
-                    <p id="pvalue"></p>
-                </div>
-
-
             </div>
-            <br>
-
-            <h2 class="heading">This Week</h2>
-            <div class="forcast"></div>
         </div>
     </div>
     
