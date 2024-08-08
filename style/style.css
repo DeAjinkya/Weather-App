@@ -24,7 +24,7 @@ h1{
 }
 
 .w-inputs{
-    width: 550px;
+    width: 50%;
 }
 
 .w-inputs input{
@@ -62,11 +62,10 @@ h1{
 
 .w-inputs .separator::before{
     content: "or";
-    color: #6c757d;
     font-size: 1rem;
     padding: 0 15px;
     margin-top: -4px;
-    background: antiquewhite;
+    background: white;
 }
 
 .weather-data{
@@ -110,7 +109,10 @@ h1{
 
 .w-cards{
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    text-align: center;
 }
 
 .w-cards .cards{
@@ -119,12 +121,16 @@ h1{
     padding: 18px 16px;
     border-radius: 5px;
     background: #6c757d;
-    width: calc(100%/5);
+    flex-wrap: wrap;
+    
 }
 
 .w-cards .cards img{
-    max-width: 70px;
-    margin: 5px 0 -12px 0;
+    max-width: 120px;
+    margin-top: -15px;
+    border-radius: 25%;
+    margin-left: 150px;
+
 }
 
 @media (max-width: 1400px) {
@@ -135,25 +141,25 @@ h1{
         flex-wrap: wrap;
     }
     .w-cards .cards{
-        width: calc(100%/4 - 15px);
+        width: 100%;
     }
     
 }
 
 @media (max-width: 1200px) {
     .w-cards .cards{
-        width: calc(100%/3 - 15px);
+        width:100%;
     }
     
 }
 
 @media (max-width: 950px) {
     .w-inputs{
-        width: 450px;
+        width: 50%;
     }
 
     .w-cards .cards{
-        width: calc(100%/2 - 10px);
+        width: 100%;
     }
     
 }
@@ -167,4 +173,3 @@ h1{
         width: 100%;
     }
 }
-
