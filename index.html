@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <script src="script/app.js"></script>
+    <script src="script/app.js" defer></script>
     <title>Wapp</title>
 </head>
 <body>
@@ -12,67 +12,21 @@
     <div class="container">
         <div class="w-inputs">
             <h3>Enter a City name</h3>
-            <input type="text" placeholder="eg.,pune ,nagpur">
+            <input name="city" id="city-input" type="text" placeholder="eg.,pune ,nagpur">
             <button id="search-btn">Search</button>
             <div class="separator"></div>
             <button id="location-btn">Use current location</button>
         </div>
         <div>
             <div class="weather-data">
-                <div class="current-weather">
-                    <div class="details">
-                        <h2>London (2024-06-19)</h2>
-                        <h4>Temperature : 19.10C</h4>
-                        <h4>Wind : 4.31 M/S</h4>
-                        <h4>Humidity : 79%</h4>
-                    </div>
-                    <div class="icon">
-                        <img src="assets/icon.jpeg" alt="weather-icon">
-                        <h6>Moderate Rain</h6>
-                    </div>
+                <div class="current-weather" id="current-weather">
+                
                 </div>
                 <div class="days-forecast">
                     <h2>5-Days forecast</h2>
-                    <ul class="w-cards">
-                        <li class="cards">
-                            <h2>(2024-06-19)</h2>
-                            <img src="assets/icon.jpeg" alt="weather-icon">
-                            <h4>Temperature : 19.10C</h4>
-                            <h4>Wind : 4.31 M/S</h4>
-                            <h4>Humidity : 79%</h4>
-                        </li>
+                    <ul class="w-cards" id="w-cards">
 
-                        <li class="cards">
-                            <h2>(2024-06-19)</h2>
-                            <img src="assets/icon.jpeg" alt="weather-icon">
-                            <h4>Temperature : 19.10C</h4>
-                            <h4>Wind : 4.31 M/S</h4>
-                            <h4>Humidity : 79%</h4>
-                        </li>
-
-                        <li class="cards">
-                            <h2>(2024-06-19)</h2>
-                            <img src="assets/icon.jpeg" alt="weather-icon">
-                            <h4>Temperature : 19.10C</h4>
-                            <h4>Wind : 4.31 M/S</h4>
-                            <h4>Humidity : 79%</h4>
-                        </li>
-
-                        <li class="cards">
-                            <h2>(2024-06-19)</h2>
-                            <img src="assets/icon.jpeg" alt="weather-icon">
-                            <h4>Temperature : 19.10C</h4>
-                            <h4>Wind : 4.31 M/S</h4>
-                            <h4>Humidity : 79%</h4>
-                        </li>
-
-                        <li class="cards">
-                            <h2>(2024-06-19)</h2>
-                            <img src="assets/icon.jpeg" alt="weather-icon">
-                            <h4>Temperature : 19.10C</h4>
-                            <h4>Wind : 4.31 M/S</h4>
-                            <h4>Humidity : 79%</h4>
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
