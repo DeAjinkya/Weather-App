@@ -101,6 +101,70 @@ h1{
 .current-weather .icon h6 {
     margin-top: 5px;
     text-transform: capitalize;
-
-
 }
+
+.days-forecast h2{
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.w-cards{
+    display: flex;
+    gap: 20px;
+}
+
+.w-cards .cards{
+    list-style: none;
+    color: #fff;
+    padding: 18px 16px;
+    border-radius: 5px;
+    background: #6c757d;
+    width: calc(100%/5);
+}
+
+.w-cards .cards img{
+    max-width: 70px;
+    margin: 5px 0 -12px 0;
+}
+
+@media (max-width: 1400px) {
+    .weather-data .current-weather{
+        padding: 20px;
+    }
+    .w-cards{
+        flex-wrap: wrap;
+    }
+    .w-cards .cards{
+        width: calc(100%/4 - 15px);
+    }
+    
+}
+
+@media (max-width: 1200px) {
+    .w-cards .cards{
+        width: calc(100%/3 - 15px);
+    }
+    
+}
+
+@media (max-width: 950px) {
+    .w-inputs{
+        width: 450px;
+    }
+
+    .w-cards .cards{
+        width: calc(100%/2 - 10px);
+    }
+    
+}
+
+@media (max-width: 750px) {
+    .container{
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .w-inputs{
+        width: 100%;
+    }
+}
+
