@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="script/app.js" defer></script>
     <title>Wapp</title>
 </head>
-<body>
-    <h1>weather dashboard</h1>
-    <div class="container">
-        <div class="w-inputs">
-            <h3>Enter a City name</h3>
-            <input name="city" id="city-input" type="text" placeholder="eg.,pune ,nagpur">
-            <button id="search-btn">Search</button>
-            <div class="separator"></div>
-            <button id="location-btn">Use current location</button>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center">
+    <h1 class="text-3xl font-bold text-gray-800 my-4">weather dashboard</h1>
+    <div class="container mx-auto bg-white shadow-md rounded-lg">
+        <div class="w-inputs mb-4">
+            <h3 class="text-lg font-semibold text-gray-700 mb-2">Enter a City name</h3>
+            <input class="border border-gray-300 focus:ring-blue-500 mb-4" name="city" id="city-input" type="text" placeholder="eg.,pune ,nagpur">
+            <button class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition duration-200" id="search-btn">Search</button>
+            <div class="separator my-4"></div>
+            <button class="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600 transition duration-200" id="location-btn">Use current location</button>
         </div>
         <div>
             <div class="weather-data">
@@ -23,10 +24,9 @@
                 
                 </div>
                 <div class="days-forecast">
-                    <h2>5-Days forecast</h2>
+                    <h2 class="text-xl font-semibold text-gray-800 mb-4">5-Days forecast</h2>
                     <ul class="w-cards" id="w-cards">
-
-                        
+   
                     </ul>
                 </div>
             </div>
